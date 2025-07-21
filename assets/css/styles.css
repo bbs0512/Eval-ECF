@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*style pour page d'acceuil*/
+/* element de style pour topbar*/
+#topBar {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+    @media (min-width: 768px) {
+        #logo {padding-right: 15px;}
+    }
+
+h1 {
+    text-transform: uppercase;
+    color: rgb(87, 180, 87);
+}
+
+#menuBurger {
+    padding: 0 20px 0 70px;
+}
+    @media (min-width: 426px){
+        #menuBurger {display: none;}
+    }
+        @media (min-width: 376px) and (max-width: 425px) {
+            #menuBurger {padding: 0 30px 0 120px;}
+        }
+
+#menu {
+    font-size: 20px;
+    color: rgb(87, 180, 87);
+}
+#menu ul {
+    display: flex;
+    list-style-type: none;
+    
+}   
+    @media (max-width: 425px){
+        #menu ul {display: none;}
+    }
+        @media (min-width: 768px) {
+            #menu ul { width: 498px;
+            justify-content: space-evenly;}
+        }
+            @media (min-width: 992px) {
+                #menu ul { width: 762px;}
+            }
+                @media (min-width: 1200px) {
+                    #menu ul { width: 970px;}
+                }
+                    @media (min-width: 1440px) {
+                        #menu ul { width: 1210px;}
+                    }
+                #menu a {
+                    text-decoration: none;
+                    color: rgb(87, 180, 87);
+                }
+                    #menu ul button {
+            background-color: rgb(87, 180, 87);
+            color: white;
+            border-radius: 4px;
+            text-transform: uppercase;
+            border-color: transparent;
+            padding: 8px;
+            margin-top: -8px;
+        }
+
+
+/* element de style pour formulaire */
+#formuAcceuil form {
+    padding-left: 80px;
+    margin-top: -40px;
+}
+    @media (min-width:768px){
+        #formuAcceuil form { padding-left: 150px;
+        margin-top: -300px;}
+    }
+        @media (min-width:992px){
+            #formuAcceuil form { padding-left: 200px;
+            margin-top: -400px;}
+        }
+            @media (min-width:1200px){
+                #formuAcceuil form { padding-left: 300px;
+                margin-top: -500px;}
+            }
+                @media (min-width:1440px){
+                    #formuAcceuil form { padding-left: 400px;
+                    margin-top: -500px;}
+                }
+                    @media (min-width:1920px){
+                        #formuAcceuil form { padding-left: 500px;
+                        margin-top: -500px;}
+                    }
+
+    #formuAcceuil img {
+        width: 100%;
+    }
+        #formuAcceuil input {
+            height: 35px;
+            width: 70%;
+            border: 1px solid;
+            border-bottom: 0;
+            border-color: #cdc8c8;
+            font-size: 16px;
+            color: #9d9797;
+            padding: 0 10px 0 30px;
+        }
+
+#depart {
+    border-radius: 7px 7px 0 0;
+}
+
+#nbrpassager {
+    border-radius: 0 0 7px 7px !important;
+    border-top-color: #dbdbdb !important;
+    border-bottom: 1px solid !important;
+    border-bottom-color:#dbdbdb;
+}
+
+#arrive {
+    border-top-color: #dbdbdb !important;
+}
+
+#date {
+    border-top-color: #dbdbdb !important;
+}
+
+#search {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border-color: #dbdbdb;
+    text-transform: uppercase;
+    background-color: rgb(87, 180, 87);
+    color: white;
+}
+
+
+/* element de style pour section info*/
+#sectionInfo {
+    margin:0
+}
+    @media (min-width: 768px) {
+        #sectionInfo {margin: 150px 15px 15px 15px}
+    }
+        @media (min-width: 992px) {
+            #sectionInfo { margin: 250px 15px 15px 15px;}
+        }
+            @media (min-width: 1200px) {
+                #sectionInfo { margin: 350px 15px 15px 15px;}
+        }
+                @media (min-width: 1440px) {
+                    #sectionInfo { margin: 350px 15px 15px 15px;}
+                }
+
+.imgSetting {
+    text-align: center;
+    margin: 75px 15px 15px 15px;
+}
+    .imgSetting img {
+        border-radius: 15px;
+    }
+        @media (min-width: 768px) {
+            .imgSetting {display: flex;}
+            #covoit {flex-direction: row-reverse;}
+        }
+            @media (min-width: 992px) {
+                .imgSetting img { width: 400px; 
+                    height: 300px;}
+            }
+                @media (min-width: 1200px) {
+                    .imgSetting img { width: 50%;
+                        height: auto;}
+                }
+                
+
+h2 {
+    color: rgb(87, 180, 87);
+    text-align: center;
+    padding: 15px 0;
+}
+    @media (min-width: 992px) {
+        h2 {padding-bottom: 30px;}
+    }
+
+.textSetting {
+    align-content: center;
+    padding: 0 15px;
+    text-align:center;
+    line-height: 20px;
+}
+    @media (min-width: 992px) {
+        .textSetting { font-size: 20px;}
+    }
+
+
+/*element de style pour section contact*/
+#bottomContact {
+    background-color: rgb(87, 180, 87);
+    color: white;
+    align-content: center;
+    padding: 0 15px 20px 15px;
+    text-align:center;
+    line-height: 20px;
+}
+    #bottomContact h2 {
+        color: white;
+        padding: 30px 0 0 0;
+    }
+        @media (min-width: 992px) {
+            #bottomContact { font-size: 20px;
+            padding: 20px 50px 50px 50px}
+        }   
+
+#bottomContact p {
+    padding: 30px 30px 30px 30px;
+}
+    @media (min-width: 768px) {
+        #bottomContact p {padding: 30px 120px;}
+    }
+        @media (min-width: 992px) {
+            #bottomContact p { padding: 30px 210px;}
+        }
+            @media (min-width: 1200px) {
+                #bottomContact p {padding: 30px 290px;}
+            }
+                @media (min-width: 1440px) {
+                    #bottomContact p {padding: 30px 440px;}
+                }
+
+/*element de style pour bottombar*/
+#bottomBar {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: rgb(45, 94, 45);
+    color: white;
+    font-weight: bold;
+}
+    #bottomBar a {
+        text-decoration: none;
+        color: rgb(87, 180, 87);
+    }
+
+        @media (min-width: 768px) {
+            #bottomBar { display: flex;
+            justify-content: space-between;}
+        }
+                @media (min-width: 992px) {
+                    #bottomBar { padding: 20px 50px;}
+                }
+                    @media (min-width: 1200px) {
+                        #bottomBar {padding: 20px 60px;}
+                    }
+                        @media (min-width: 1440px) {
+                            #bottomBar {padding: 20px 80px;}
+                        }
+
+/*element pour section filtre*/
+
+#sectionFiltre p {
+    padding: 20px 10px 40px 10px;
+}
+    @media (min-width: 768px) {
+        #sectionFiltre p {padding:20px 10px 40px 50px}
+    }
+        @media (min-width: 1200px) {
+            #sectionFiltre p {padding:20px 10px 40px 150px}
+        }
+            @media (min-width: 768px) {
+                #sectionFiltre {margin-top: 150px;}
+            }
+                @media (min-width: 992px) {
+                    #sectionFiltre {margin-top: 250px;}
+                }
+                    @media (min-width: 1200px) {
+                        #sectionFiltre {margin-top: 350px;}
+                    }
+
+#filtreButton {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+    #filtreButton a {
+        padding-left: 15px;
+        text-decoration: none;
+        color: black;
+    }
+        @media (min-width: 768px) {
+            #filtreButton {margin-left: 50px;}
+        }
+            @media (min-width: 1200px) {
+                #filtreButton {margin-left: 150px;}
+            }
+
+#filtres {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(87, 180, 87);
+    color: white;
+    font-size: 15px;
+    border-color: #dbdbdb;
+    text-transform: uppercase ;
+    
+}
+
+.none {
+    display: none;
+}
+
+#filterContainer {
+    background-color: rgb(247, 247, 247);
+    width: 340px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #cdc8c8;
+    border: 1px;
+    box-shadow:1px 1px 1px 1px#cdc8c8;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+        @media (min-width: 768px) {
+            #filterContainer { margin-left: 25%;}
+        }
+        @media (min-width: 992px) {
+            #filterContainer { margin-left: 33%;}
+        }
+            @media (min-width: 1200px) {
+                #filterContainer { margin-left: 35%;}
+            }
+                @media (min-width: 1440px) {
+                    #filterContainer { margin-left: 38%;}
+                }
+                    @media (min-width: 1700px) {
+                        #filterContainer { margin-left: 40%;}
+                    }
+
+
+#submit {
+    padding: 4px;
+    margin-bottom: 10px;
+    background-color: rgb(87, 180, 87);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border-color: #cdc8c8;
+}
+
+#maxDuration {
+    width: 40px;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+#maxPrice {
+    width: 40px;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.filterPadding {
+    padding: 5px 0;
+}
+
+#travelType {
+    padding: 10px 0 5px 0;
+}
+
+/*element de style pour formulaire inscription*/
+
+#formuInscription {
+    background-color: rgb(247, 247, 247);
+    width: 340px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #cdc8c8;
+    border: 1px;
+    box-shadow:1px 1px 1px 1px#cdc8c8;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+        @media (min-width: 768px) {
+        #formuInscription { margin-left: 30%;}
+    }
+        @media (min-width: 992px) {
+            #formuInscription { margin-left: 33%;}
+        }
+            @media (min-width: 1200px) {
+                #formuInscription { margin-left: 35%;}
+            }
+                @media (min-width: 1440px) {
+                    #formuInscription { margin-left: 38%;}
+                }
+                    @media (min-width: 1700px) {
+                        #formuInscription { margin-left: 40%;}
+                    }
+
+    #formuInscription p {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 25px 25px 25px;
+    }
+
+
+#titreInscription {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+    @media (min-width: 768px) {
+        #titreInscription {padding:20px;}
+    }
+
+
+#pseudoFormInscription {
+    padding: 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+
+#mailFormInscription {
+    padding: 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+
+#passwordFormInscription {
+    padding: 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+
+#passwordFormInscription2 {
+    padding: 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+
+
+#buttonFormInscription {
+    padding: 10px;
+    border-radius: 15px;
+    border-color: #ececec;
+    background-color: rgb(87, 180, 87);
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#formuConnexion {
+    background-color: rgb(247, 247, 247);
+    width: 340px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #cdc8c8;
+    border: 1px;
+    box-shadow:1px 1px 1px 1px#cdc8c8;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+    @media (min-width: 768px) {
+        #formuConnexion { margin-left: 25%;}
+    }
+        @media (min-width: 992px) {
+            #formuConnexion { margin-left: 33%;}
+        }
+            @media (min-width: 1200px) {
+                #formuConnexion { margin-left: 35%;}
+            }
+                @media (min-width: 1440px) {
+                    #formuConnexion { margin-left: 38%;}
+                }
+                    @media (min-width: 1700px) {
+                        #formuConnexion { margin-left: 40%;}
+                    }
+
+#titreConnexion {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+#mailFormConnexion {
+    padding: 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+
+
+#passwordFormConnexion {
+    padding: 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+
+
+#buttonFormConnexion {
+    padding: 10px;
+    border-radius: 15px;
+    border-color: #ececec;
+    background-color: rgb(87, 180, 87);
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+#linkInscription {
+    padding-bottom: 15px;
+}
+
+#linkInscription  a {
+    color: rgb(87, 180, 87);
+}
+
+/*element de style pour formulaire contact*/
+
+#formuContact {
+    background-color: rgb(247, 247, 247);
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #cdc8c8;
+    border: 1px;
+    box-shadow:1px 1px 1px 1px#cdc8c8;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+    @media (min-width: 768px) {
+        #formuContact { margin-left: 80px;}
+    }
+        @media (min-width: 992px) {
+            #formuContact { margin-left: 100px;}
+        }
+            @media (min-width: 1200px) {
+                #formuContact { margin-left: 120px;}
+            }
+                @media (min-width: 1440px) {
+                    #formuContact { margin-left: 150px;}
+                }
+                    @media (min-width: 1700px) {
+                        #formuContact { margin-left: 200px;}
+                    }
+
+#titreContact {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+    @media (min-width: 768px) {
+        #titreContact {padding:20px;}
+    }
+
+#nomFormContact {
+    padding: 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+    @media (min-width: 768px) {
+        #nomFormContact {padding: 10px 160px 10px 10px;
+        font-size: 18px;}
+    }
+
+
+#prenomFormContact {
+    padding: 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+    @media (min-width: 768px) {
+        #prenomFormContact {padding: 10px 160px 10px 10px;
+        font-size: 18px;}
+    }
+
+#mailFormContact {
+    padding: 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+    @media (min-width: 768px) {
+        #mailFormContact {padding: 10px 160px 10px 10px;
+        font-size: 18px;}
+    }
+
+#textFormContact {
+    padding: 8px 8px 60px 8px;
+    border-radius: 10px;
+    border-color:#ececec;
+    margin-bottom: 20px;
+}
+    @media (min-width: 768px) {
+        #textFormContact {padding: 10px 160px 150px 10px;
+        font-size: 18px;}
+    }
+
+#buttonFormContact {
+    padding: 10px;
+    border-radius: 15px;
+    border-color: #ececec;
+    background-color: rgb(87, 180, 87);
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+    @media (min-width: 768px) {
+        #buttonFormContact {padding: 15px 20px;}
+    }
